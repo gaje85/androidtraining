@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MapsActivity">
+    <item android:id="@+id/location"
+         android:title="GotoLocation"
+         app:showAsAction="never" />
+    <item android:id="@+id/traffic"
+        android:title="ShowTrafic"
+        app:showAsAction="never"  />
+    <item android:id="@+id/toast"
+        android:title="ShowToast"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,2 @@
+include ':app', ':resolveaddress', ':contactsadapter', ':firstmap', ':filesystem', ':customnotification', ':fts', ':myapplication'':'
+include ':sQLiteExample1', ':'

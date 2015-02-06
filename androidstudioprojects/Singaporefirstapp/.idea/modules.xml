@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Singaporefirstapp.iml" filepath="$PROJECT_DIR$/Singaporefirstapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contactsadapter/contactsadapter.iml" filepath="$PROJECT_DIR$/contactsadapter/contactsadapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customnotification/customnotification.iml" filepath="$PROJECT_DIR$/customnotification/customnotification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filesystem/filesystem.iml" filepath="$PROJECT_DIR$/filesystem/filesystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firstmap/firstmap.iml" filepath="$PROJECT_DIR$/firstmap/firstmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resolveaddress/resolveaddress.iml" filepath="$PROJECT_DIR$/resolveaddress/resolveaddress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sQLiteExample1/sQLiteExample1.iml" filepath="$PROJECT_DIR$/sQLiteExample1/sQLiteExample1.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:gravity="center_horizontal" android:padding="10px"
+		 android:background="#000000">
+
+		<TextView android:id="@+id/intro_label_telmgr"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="10px" android:layout_marginBottom="15px" android:layout_marginTop="15px"
+			android:textStyle="bold" android:text="Phone Properties"/>
+			
+		<TextView android:id="@+id/telmgroutput" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="10px"
+			android:layout_marginBottom="20px" android:layout_below="@id/intro_label_telmgr"
+			android:text="" />
+
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/write"
+		android:text="Write File"></Button>
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/read"
+		android:text="Read File"></Button>
+
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<EditText android:id="@+id/EditText01" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:text="Click the Write File Button First"></EditText>
+	</ScrollView>
+
+
+</LinearLayout>

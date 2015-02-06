@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_row"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="firstname"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstname"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="lastname"
+        android:textColor="#000000"
+        android:textSize="14dp" >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="age"
+        android:id="@+id/age"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FTS.iml" filepath="$PROJECT_DIR$/FTS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/actionbarapp/actionbarapp.iml" filepath="$PROJECT_DIR$/actionbarapp/actionbarapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidService/androidService.iml" filepath="$PROJECT_DIR$/androidService/androidService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidVideoviewExamples/androidVideoviewExamples.iml" filepath="$PROJECT_DIR$/androidVideoviewExamples/androidVideoviewExamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contentProviderExample2/contentProviderExample2.iml" filepath="$PROJECT_DIR$/contentProviderExample2/contentProviderExample2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/countryAppFrag/countryAppFrag.iml" filepath="$PROJECT_DIR$/countryAppFrag/countryAppFrag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faceDetection/faceDetection.iml" filepath="$PROJECT_DIR$/faceDetection/faceDetection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firstmap/firstmap.iml" filepath="$PROJECT_DIR$/firstmap/firstmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gesturerecog/gesturerecog.iml" filepath="$PROJECT_DIR$/gesturerecog/gesturerecog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layoutExample/layoutExample.iml" filepath="$PROJECT_DIR$/layoutExample/layoutExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paypalsingaporeapp/paypalsingaporeapp.iml" filepath="$PROJECT_DIR$/paypalsingaporeapp/paypalsingaporeapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simpleIntents/simpleIntents.iml" filepath="$PROJECT_DIR$/simpleIntents/simpleIntents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/takepictureone/takepictureone.iml" filepath="$PROJECT_DIR$/takepictureone/takepictureone.iml" />
+    </modules>
+  </component>
+</project>
+

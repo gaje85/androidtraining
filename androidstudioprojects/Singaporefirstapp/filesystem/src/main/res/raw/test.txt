@@ -1,0 +1,1 @@
+This text is from raw resource file inside this application.

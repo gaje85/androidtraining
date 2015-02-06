@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.2.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/actionbarapp" />
+            <option value="$PROJECT_DIR$/androidService" />
+            <option value="$PROJECT_DIR$/androidVideoviewExamples" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/contentProviderExample2" />
+            <option value="$PROJECT_DIR$/countryAppFrag" />
+            <option value="$PROJECT_DIR$/faceDetection" />
+            <option value="$PROJECT_DIR$/firstmap" />
+            <option value="$PROJECT_DIR$/gesturerecog" />
+            <option value="$PROJECT_DIR$/layoutExample" />
+            <option value="$PROJECT_DIR$/paypalsingaporeapp" />
+            <option value="$PROJECT_DIR$/simpleIntents" />
+            <option value="$PROJECT_DIR$/takepictureone" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
+

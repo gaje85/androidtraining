@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:padding="5dp">
+    <RelativeLayout android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/scustomer" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" style="@android:style/TextAppearance.Medium"
+            android:paddingRight="5sp" />
+        <TextView android:id="@+id/sname" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_toRightOf="@id/scustomer"
+            style="@android:style/TextAppearance.Small" />
+        <TextView android:id="@+id/saddress" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@id/scustomer"
+            style="@android:style/TextAppearance.Small" />
+        <TextView android:id="@+id/scity" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@id/saddress"
+            style="@android:style/TextAppearance.Small" android:paddingRight="2sp" />
+        <TextView android:id="@+id/scomma" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@id/saddress"
+            android:layout_toRightOf="@id/scity" style="@android:style/TextAppearance.Small"
+            android:paddingRight="2sp" android:text=","/>   
+        <TextView android:id="@+id/sstate" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@id/saddress"
+            android:layout_toRightOf="@id/scomma" style="@android:style/TextAppearance.Small"
+            android:paddingRight="2sp" />
+        <TextView android:id="@+id/szipCode" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@id/saddress"
+            android:layout_toRightOf="@id/sstate" style="@android:style/TextAppearance.Small" />
+    </RelativeLayout>
+</LinearLayout>
