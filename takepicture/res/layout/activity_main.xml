@@ -3,27 +3,35 @@
     android:orientation="vertical" android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <TextView
+   
+
+        
+   
+    <Button
+        android:id="@+id/imgButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter Email" />
-
-    <ImageView android:id="@+id/camera_image"
+        android:text="Capture Image" />
+    
+    
+    <Button
+        android:id="@+id/delButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete All Image" />
+    
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"  android:layout_height="fill_parent">
+    <ImageView android:id="@+id/camera_image1"   android:padding="10dp"
         android:layout_width="wrap_content" android:layout_height="wrap_content" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Send to Email" />
+      <ImageView android:id="@+id/camera_image2" android:padding="10dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    
+        <ImageView android:id="@+id/camera_image3" android:padding="10dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+      
+          <ImageView android:id="@+id/camera_image4" android:padding="10dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+          </LinearLayout>
 
 </LinearLayout>

@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "com.paypal.first.filesystem"
-        minSdkVersion 15
-        targetSdkVersion 21
+        minSdkVersion 19
+        targetSdkVersion 17
         versionCode 1
         versionName "1.0"
     }

@@ -9,9 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     
-    <com.doepiccoding.facedetection.CustomView 
-        android:id="@+id/myCustomView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+  
+    
 
 </RelativeLayout>

@@ -8,38 +8,80 @@ import java.io.IOException;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
-import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-
-	 private static final int CAMERA_PIC_REQUEST = 1111;
-	    private ImageView mImage;
+	int currentCount = 0;
 	 
+	 private static final int CAMERA_PIC_REQUEST = 1111;
+	    private ImageView mImageOne,mImageTwo,mImageThree,mImageFour;
+	    private Button createButton,deleteButton = null;
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.activity_main);
 	 
-	        mImage = (ImageView) findViewById(R.id.camera_image);
+	        mImageOne = (ImageView) findViewById(R.id.camera_image1);
+	        mImageTwo = (ImageView) findViewById(R.id.camera_image2);
+	        mImageThree = (ImageView) findViewById(R.id.camera_image3);
+	        mImageFour = (ImageView) findViewById(R.id.camera_image4);
 	        //1
-	        Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-	        startActivityForResult(intent, CAMERA_PIC_REQUEST);
+	        Button createButton = (Button)findViewById(R.id.imgButton);
+	        createButton.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					 Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+				     startActivityForResult(intent, CAMERA_PIC_REQUEST);	
+				}
+			});
+	        Button deleteButton = (Button)findViewById(R.id.delButton);
+	        deleteButton.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					mImageOne.setImageBitmap(null);
+					mImageTwo.setImageBitmap(null);
+					mImageThree.setImageBitmap(null);
+					mImageFour.setImageBitmap(null);
+					currentCount = 0;
+				}
+			}); 
+	       
 	    }
 	 
 	    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 	        if (requestCode == CAMERA_PIC_REQUEST) {
 	            //2
-	            Bitmap thumbnail = (Bitmap) data.getExtras().get("data");  
-	            mImage.setImageBitmap(thumbnail);
+	            Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
+	            switch (currentCount) {
+				case 0:
+					mImageOne.setImageBitmap(thumbnail);
+					break;
+				case 1:
+					mImageTwo.setImageBitmap(thumbnail);
+					break;
+				case 2:
+					mImageThree.setImageBitmap(thumbnail);
+					break;
+				case 3:
+					mImageFour.setImageBitmap(thumbnail);
+					break;
+				default:
+					Toast.makeText(this, "Only 4 images of form 16 required", Toast.LENGTH_LONG).show(); 
+					break;
+				}
+	            
 	            //3
 	            ByteArrayOutputStream bytes = new ByteArrayOutputStream();
 	            thumbnail.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
 	            //4
-	            File file = new File(Environment.getExternalStorageDirectory()+File.separator + "image.jpg");
+	            File file = new File(Environment.getExternalStorageDirectory()+File.separator + currentCount+"image.jpg");
 	            try {
 	                file.createNewFile();
 	                FileOutputStream fo = new FileOutputStream(file);
@@ -50,45 +92,11 @@ public class MainActivity extends Activity {
 	                
 	                e.printStackTrace();
 	            }
+	            currentCount++;
 	            
-	            JSoupAsyncTask jsoup = new JSoupAsyncTask();
-				jsoup.execute(new String[]{file.getAbsolutePath()});
-	        
 	        }
 	    }
-	    
-	    class JSoupAsyncTask extends AsyncTask<String, Void, String> {
-			
-	     	@Override
-		    protected String doInBackground(String... file) {
-	     	    Mail m = new Mail("gaje85@gmail.com", "pass"); 
-	           	 
-                String[] toArr = {"gaje85@gmail.com"}; 
-                m.setTo(toArr); 
-                m.setFrom("training@gmail.com"); 
-                m.setBody("A Picture is taken "); 
-                m.setSubject("Your Picture"); 
-           
-                try { 
-                 m.addAttachment(file[0]); 
-                 final boolean b = m.send();
-
-                } catch(Exception e) { 
-                //  Toast.makeText(MainActivity.this, "There was a problem sending the email.", Toast.LENGTH_LONG).show(); 
-                  Log.e("MailApp", "Could not send email", e); 
-                }
-
-		          return "";
-		    }
-
-		    @Override
-		    protected void onPostExecute(String result) {
-		    	
-		    }
-		
-		}
-
-	    
+	    	    
 	}
     
 
